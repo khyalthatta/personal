@@ -1,0 +1,39 @@
+#To choose the multiple select field in django there are two ways 
+
+1. Easy way
+
+Install third party package  
+
+i.e.
+
+pip install django-multiselectfield
+
+
+setting.py
+
+INSTALLED_APP = ['multiselctfield',]
+
+
+models.py
+
+from multiselectfield import MultiSelectField
+
+choice_field = MultiSelectField(choices = CHOICE_DATA)
+
+
+
+2.Another Way 
+
+from django import forms
+
+
+class CountryForm(forms.Form):
+    OPTIONS = (
+        ("AUT", "Austria"),
+        ("DEU", "Germany"),
+        ("NLD", "Neitherlands"),
+    )
+    Countries = forms.MultipleChoiceField(widget=forms.CheckboxSelectMultiple,
+                                          choices=OPTIONS)
+
+

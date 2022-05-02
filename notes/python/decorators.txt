@@ -1,0 +1,21 @@
+Criteria For Clouser
+
+Function must be nested inside a main Function
+
+Nested function must refer to a value from the main function 
+
+
+Main function must return a function
+
+
+Example: 
+
+def greet(msg):
+    def print_value(msg):
+        return msg 
+
+    return print_value    
+
+r = greet("Hello World") # The function print_value is still not called 
+
+r() --> # Now the function print_value is called so you can return the msg.  

@@ -1,0 +1,7 @@
+# Type of Arguments
+
+1. Positional Arguments (a, b)
+
+2. Keyword Arguments (a, b=2)
+
+3. Arbitrary Arbitrary (*args, **kwargs)

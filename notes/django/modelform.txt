@@ -1,0 +1,11 @@
+# Form can be handled in django differently. If you use model form it is very 
+convenient to use the data in the views. 
+
+# To create choice field in the model form 
+
+CH = (
+    ('key', 'Value'),
+    ('...', '.....')
+)
+
+<choice_var> = models.CharField(maxLength is required, choices=CH)

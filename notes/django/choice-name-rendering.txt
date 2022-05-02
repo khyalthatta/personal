@@ -1,0 +1,20 @@
+#How to render your choice name rather than its value in django template.
+
+i.e.
+
+<model_instance>.get_<model_attribute>_display
+
+Example
+
+class Foo(models.Model):
+    GENDER_CHOICES = (
+        ('M', 'Male'),
+        ('F', 'Female'),
+    )
+    gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
+
+Now, you want to display the gender field in a template. 
+If you use the {{ person.gender }} variable, 
+you would get "M" or "F" to display on your page. 
+But what if you want "Male" or "Female"? 
+Then you would use {{ person.get_gender_display }}.

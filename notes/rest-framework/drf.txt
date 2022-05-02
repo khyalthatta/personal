@@ -1,0 +1,6 @@
+#1 
+Django Rest Framework
+
+Django rest framework is basically used to create rest api to interact two or more application in a system. REST stands for Representational State Transfer which use http or https to connect with web application. 
+
+Traditionally, a system request the server and server send the html to the system but in the modern era the server now send the data in a specific format such as JSON, xml , csv to the system. 

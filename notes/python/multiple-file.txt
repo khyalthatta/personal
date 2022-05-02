@@ -1,0 +1,44 @@
+# How to create multiple file at once using python 
+
+First, 
+
+Create the base directory
+
+i.e.
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+Now name the folder you want to create and join to the base dir.
+
+i.e.
+
+file_dir = os.path.join(BASE_DIR, "<Folder_Name>")
+
+Use os.makedirs to build the folder
+
+i.e.
+
+os.makedirs(file_dir, exist_ok=True)
+
+Now you have successfully create the folder named "<Folder_Name>"
+
+
+Second, 
+
+Iterate the file like (.txt .jpg etc.) inside the created folder.
+
+For That, 
+
+for i in range(0, 5):
+	fname = f"{i}.txt"
+	file_path = os.path.join(file_dir, fname)
+	if os.path.exists(file_path):
+		continue
+	with open(file_path, 'w') as f:
+		f.write("<Text you want to write>")
+
+Result, 
+
+It will iterate 5 times to create 5 .txt file in the <Folder_Name> that you have created.
+
+

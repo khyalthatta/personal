@@ -1,0 +1,11 @@
+# To select multiple cursor in windows 
+
+Shift + Alt + Arrow Key
+
+# To select multiple but same variable 
+
+Ctrl + d
+
+To remove multiple cursor 
+
+Esc

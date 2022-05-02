@@ -1,0 +1,25 @@
+# To read the file 
+
+fname = "<file_name>"
+
+with open(fname, 'r') as f:
+	f.read()
+
+
+<--------------------------->
+
+
+# To write the file 
+
+fname = "<file_name>"
+
+with open(fname, 'w') as f:
+	f.write("<Do Something>")
+
+
+<------------------------------>
+
+For more characters like 'r' and 'w' visit:
+https://docs.python.org/3/library/functions.html#open
+
+Note: If you want the dynamic path for the <"fname">, you can refernce the file called <"dynamic-path.txt"> aligned with it in same folder.

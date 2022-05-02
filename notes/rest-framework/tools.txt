@@ -1,0 +1,19 @@
+We need basic tools to start the rest framework.
+
+#1
+git 
+
+#2 
+python 
+
+#3 
+django-rest-framwork and django 
+
+#4 
+requests 
+
+#5
+vscode 
+
+#6
+django-cors-headers

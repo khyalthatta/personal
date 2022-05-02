@@ -1,0 +1,77 @@
+// We can use different methods and attributes in class like instance, class and static.
+
+
+# For Instance
+
+#1 
+To create the instance attribute and methods we first initialize the method inside the class called __init__. 
+
+
+#2
+We pass an instace or object of a class as a parameter in __init__ method as a 'self'. You can write any name you want but self is a standard on python. Self represents current instance of a class. 
+
+i.e. 
+
+class <ClassName>:
+    def __init__(self):
+        pass
+
+#3 
+You can get and set the attribute and method in instance class. For that 
+
+#Setting
+
+def set_method(self, parameter1):
+    self.parameter1 = parameter1
+
+#Getting 
+def get_method(self):
+    return self.parameter --> ("The parameter must have been assigned in the __init__ method. ")
+
+
+# For Class 
+
+#1
+We can also declare class attribute and methods in a class.
+We get the class attribute and methods using the class name. 
+
+i.e.
+
+class <ClassName>:
+    class_attribute = default_value
+
+
+print(ClassName.class_attribute)
+
+Output:
+default_value
+
+** Note: When we assign class attribute we can use that for all the instances that have been created of that class. 
+
+
+#2
+We can also use class method. We use class method in python for the alternative constructor. 
+
+Alternative Constructor --> Multiple ways of creating object using the class method.
+
+# To create class method 
+-> We must use classmethod decorators.
+-> Pass the 'cls' as a parameter which actually passing the class.
+-> Pass the rest of the arguments as a parameter
+
+i.e. 
+
+class ClassName:
+
+    @classmethod
+    def <class_method_name(cls, *args)>:
+        // Implement Logic 
+        // return cls(object)
+
+Now call the class method using the class name.
+
+i.e. 
+
+obj = ClassName.class_method_name(*args)
+
+New obj has been created using alternative constructor. 
